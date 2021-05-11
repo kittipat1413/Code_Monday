@@ -10,5 +10,5 @@ docker-compose up -d
 
 ```
 ## Postman Collection for API List
-- [Here]()
+- [Here](Postman-Collection/Teacher-Course.postman_collection.json)
 
