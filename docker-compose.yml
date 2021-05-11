@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    build: .
+    depends_on:
+      - pg_database_Monday
+    env_file: 
+      - app.env
+    environment:
+      DATABASE_URL: postgres://admin:admin@pg_database_Monday:5432/db_admin
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - "3000:3000"
+  pg_database_Monday:
+    restart: always
+    image: "postgres" # use latest official postgres version
+    env_file:
+      - database.env # configure postgres
+    ports:
+      - '5432:5432'
+
+
