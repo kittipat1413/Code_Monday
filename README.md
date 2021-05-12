@@ -1,6 +1,6 @@
 # Code_Monday
 
-> Teacher&Course. This app uses Node, Express, Sequalize (Postgres).
+> Teacher&Course. This app uses Node, Express, Sequalize (PostgreSQL).
 
 ## Quick Start
 
